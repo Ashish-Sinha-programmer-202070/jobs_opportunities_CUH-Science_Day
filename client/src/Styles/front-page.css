@@ -5,7 +5,7 @@
   flex-direction: column;
   height: 100vh;
   padding: 20px;
-  background-color: #f7fdff;
+  background-color: #f6fafc;
 }
 .front-page h1 {
   font-size: 45px;
@@ -19,13 +19,14 @@
 .front-page .clg-name {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: -1px -1px 1px #a4b5c7b2;
 }
 .front-page .login-opts {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
-  width: 400px;
+  width: 420px;
   height: 130px;
 }
 .front-page .login-opts .fa-icons {

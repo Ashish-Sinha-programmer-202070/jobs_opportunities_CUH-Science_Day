@@ -2,6 +2,7 @@ import React from 'react';
 import cuh_logo from '../Images/cuh_logo.png';
 import '../Styles/front-page.css';
 import { FaUserTie,FaUserGraduate } from "react-icons/fa";
+
 const FrontPage = () => {
     return ( 
         <div className="front-page">
