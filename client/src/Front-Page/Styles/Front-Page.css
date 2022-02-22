@@ -1,0 +1,57 @@
+.front-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    /* height: 100vh; */
+    padding: 110px;
+    
+    background-color: #f6fafc;
+  }
+  .front-page h1 {
+    font-size: 55px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-shadow: 2px 2px 4px #34495eb2;
+  }
+  .front-page img {
+    height: 220px;
+  }
+  .front-page .clg-name {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-shadow: -1px -1px 1px #a4b5c7b2;
+  }
+  .front-page .login-opts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 420px;
+    height: 130px;
+  }
+  .front-page .login-opts .fa-icons {
+    font-size: 40px;
+    color: #34495e;
+  }
+  .front-page .login-opts .admin,
+  .front-page .login-opts .students {
+    cursor: pointer;
+    border: 2px solid rgb(158, 155, 155);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    color: #4a5561;
+    font-size: 22px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  /* .front-page .login-opts .admin {
+  }
+  .front-page .login-opts .students {
+  } */

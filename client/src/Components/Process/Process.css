@@ -1,0 +1,42 @@
+.image{
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    background-image: url(https://www.cuh.ac.in/admin/uploads/header/1cuhadm_n.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    opacity: 90%;
+
+}
+.image .Floating-caption{
+   
+   
+    height: 330px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.767);
+    margin-left: 36px;
+    margin-top: 139px;
+    border-radius: 17px;
+    
+}
+.image .Floating-caption .float_head{
+    color: #F2AA4CFF;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 3px  rgb(43, 40, 40);
+    padding-left: 5px;
+} 
+.image .Floating-caption .float_txt{
+    text-align: left;
+    font-size: 20px;
+    color: whitesmoke;
+    text-shadow: 0px 2px  rgb(43, 40, 40);
+    font-family: 'Roboto Slab', serif;
+    padding-left: 30px;
+
+}
+.roadmap{
+    padding-left: 35px;
+    padding-top: 50px;
+}
