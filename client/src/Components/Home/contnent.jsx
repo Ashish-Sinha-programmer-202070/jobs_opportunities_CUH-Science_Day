@@ -1,6 +1,7 @@
 import './contnent.css';
 import members from './members';
 import Header from '../Login_Page/Header/Header';
+import Footer from '../Login_Page/Footer/Footer';
 import {Fragment, useState} from 'react';
 const ImgCircle = (props)=>{
     return(
@@ -59,6 +60,7 @@ function Content() {
 
             
             </div>
+        <Footer/>    
       </>
   );
 }

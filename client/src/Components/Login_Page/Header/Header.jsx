@@ -13,7 +13,7 @@ export default function Header() {
         <div className="header-options">
 
         <a  className="Box" href="/"><Link to='/home'>Home</Link></a>
-        <a  className="Box" href="/">Process</a>
+        <a  className="Box" href="/"> <Link to='/process'>Process</Link></a>
         <a  className="Box" href="/"> <Link to='/internship'>Internship</Link></a>
         <div className="dropdown">
           <button className="dropbtn">Departement</button>

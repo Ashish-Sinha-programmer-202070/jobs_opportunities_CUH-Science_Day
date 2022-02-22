@@ -1,0 +1,58 @@
+.main-footer{
+    color: black;
+    background-color: #9FBFEE;
+    margin-top: 15rem;
+    /* padding: 1rem; */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 58  vh;
+    width: 100%;   
+
+}
+.row{
+    display: flex;
+}
+.col-1{
+    padding-left: 5%;
+}
+.col-2{
+    padding-left: 7% ;
+    padding-right: 5%;
+}
+.col-3{
+    padding-left: 15% ;
+    padding-right: 10%;
+}
+
+ul{
+    list-style-type: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+h4{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.birender{
+    margin-left: 23%;
+   
+}
+
+h3{
+    font-size: 32px;
+    text-align: center;
+    margin-right: 40px;
+    color: #434343;
+}
+p{
+    padding-left: 1%;
+}
+.icons{
+    font-size: 30px;
+    display: flex;
+    gap:30px;
+    position: relative;
+    left:20px;
+    top:30px;
+    color: black;
+   
+}

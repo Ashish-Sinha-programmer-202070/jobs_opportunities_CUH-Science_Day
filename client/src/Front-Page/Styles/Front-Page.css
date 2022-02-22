@@ -5,17 +5,18 @@
     flex-direction: column;
     gap:30px;
     /* height: 100vh; */
-    padding: 20px;
+    padding: 110px;
+    
     background-color: #f6fafc;
   }
   .front-page h1 {
-    font-size: 45px;
+    font-size: 55px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     text-shadow: 2px 2px 4px #34495eb2;
   }
   .front-page img {
-    height: 200px;
+    height: 220px;
   }
   .front-page .clg-name {
     font-size: 30px;

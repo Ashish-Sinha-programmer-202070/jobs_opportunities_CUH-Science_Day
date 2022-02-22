@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Login_Page/Header/Header";
+import Footer from "../Login_Page/Footer/Footer";
 import "./About_us.css";
 import Swiper from "./Swiper";
 
@@ -27,6 +28,7 @@ To serve as a beacon of change, through multi-disciplinary learning, for creatio
 The Internship Cell is consistent with its commitment to discover new prospects and opportunities hence catering to the most imperative demand of college students</p>
     </div>
     <Swiper/>
+    <Footer/>
     </>
     
   );
