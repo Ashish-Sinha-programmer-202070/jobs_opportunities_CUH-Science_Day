@@ -21,19 +21,19 @@ function Content() {
       <>
       <Header/>
             <div className="body">
-                <div className="image">
+                <div className="image3">
                 <div className="Floating-caption">
                 <p className="float_head"> INTERNSHIP CELL </p>
                 <p className="float_txt">CENTRAL UNIVERSITY OF HARYANA</p>
                 </div>
                 </div>
                 <div className="con_table">
-                    <div className="con_tab" onClick={()=>{changeMsg(false); changePeople(members.filter((member,index)=>{return member.role == "teacher"}))}}> <h1>Teachers</h1></div>
-                    <div className="con_tab" onClick={()=>{changeMsg(false);changePeople(members.filter((member,index)=>{return member.role == "co-ordinator"}))}} ><h1>Co-ordinator</h1></div>   
+                    <div className="con_tab" onClick={()=>{changeMsg(false); changePeople(members.filter((member,index)=>{return member.role == "teacher"}))}}> <span style={{fontSize:"1.5rem"}}><b>Teachers</b></span></div>
+                    <div className="con_tab" onClick={()=>{changeMsg(false);changePeople(members.filter((member,index)=>{return member.role == "co-ordinator"}))}} > <span style={{fontSize:"1.5rem"}}><b>Co-ordinator</b></span></div>
                     <div className="con_tab" onClick={()=>{
                         changePeople([]);
                         changeMsg(msg?false:true)
-                    }} ><h1> Message </h1></div>   
+                    }} ><span style={{fontSize:"1.5rem"}}><b>Message</b></span></div>   
 
                 </div>
                 <div className="con_profile">

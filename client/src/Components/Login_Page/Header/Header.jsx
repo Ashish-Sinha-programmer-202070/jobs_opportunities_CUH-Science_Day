@@ -42,25 +42,25 @@ export default function Header() {
     <div class="collapse aac navbar-collapse " id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#"><Link to='/home'>Home</Link></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  " href="#">Process</a>
+          <a class="nav-link  " href="#"> <Link to='/process'>Process</Link></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link">Internship</a>
+          <a class="nav-link"> <Link to='/internship'>Internships</Link></a>
         </li>       
         <li class="nav-item">
-          <a class="nav-link">Contact us</a>
+          <a class="nav-link"><Link to='/contact' style={{TextDecoration: 'none'}}>ContactUS</Link></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link"></a>
+          <a class="nav-link"><Link to='/about' style={{TextDecoration: 'none'}}>About US</Link></a>
         </li>
       </ul>
       <form class="d-flex">
         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> */}
-        <button class="btn btn-success" type="submit">Login</button>
-        <button className="btn btn-success sig" type="submit">Sign up</button>
+        <button class="btn btn-success" type="submit"><Link to='/front'>Login</Link> </button>
+        <button className="btn btn-success sig" type="submit"><Link to='/front'>SignUp</Link> </button>
       </form>
     </div>
   </div>

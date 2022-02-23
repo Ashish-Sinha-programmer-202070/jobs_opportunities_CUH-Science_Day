@@ -1,4 +1,4 @@
-.image{
+.image3{
     border: 1px solid rgba(0, 0, 0, 0.281);
     background-image: url(https://www.cuh.ac.in//resourcesharingportal/Images/demo/009.jpg);
     background-repeat: no-repeat;
@@ -6,7 +6,7 @@
     height: 500px;
 
 }
-.image .Floating-caption{
+.image3 .Floating-caption{
    
     margin-top: 280px;
     height: 180px;
@@ -15,7 +15,7 @@
     margin-left: 20px;
     border-radius: 5px; 
 }
-.image .Floating-caption .float_head{
+.image3 .Floating-caption .float_head{
     color:white;
     font-size: 40px;
     text-align: left;
@@ -25,7 +25,7 @@
     padding-left: 5px;
     margin: 10px !important;
 } 
-.image .Floating-caption .float_txt{
+.image3 .Floating-caption .float_txt{
     text-align: left;
     font-size: 25px;
     color: whitesmoke;
@@ -50,7 +50,7 @@ height: 100px ;
     border: 1px solid;
     height: 30px;
     width: 140px;
-    font-size: 10px;
+    font-size: 2px;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 10px;

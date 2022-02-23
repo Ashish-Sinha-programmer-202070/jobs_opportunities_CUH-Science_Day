@@ -1,8 +1,16 @@
 import React, {  useState } from 'react';
  import  './SignUpPage.css';
  import signup_img from '../../../Front-Page/Images/cuh_logo.png';
+ import axios from "axios";
+import { useEffect } from "react";
+
 
 const SignUpPage = () => {
+    const [signup,setSignup] = useState([]);
+    useEffect(async()=>{
+        const res = await axios.post('http://localhost:5000/auth/signup');
+        setSignup(res.data.data);
+    },[]);
    
     const [f_name,setFname] = useState("");
     const [l_name,setLname] = useState("");

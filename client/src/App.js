@@ -6,6 +6,7 @@ import ErrorPage from "./Front-Page/Error-404";
 import Process from './Components/Process/Process';
 import Contnent from "./Components/Home/contnent";
 import Internship from './Components/Internship/Internship';
+import InternshipDetail from './Components/Internship/internship-detail';
 import ContactUs from './Components/Contact-US/ContactUs';
 import LoginPage from './Components/Login_Page/Login/LoginPage';
 import SignUpPage from './Components/Login_Page/SignUp/SignUpPage';
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/front" element={<FrontPage />} />
           <Route exact path="/process" element={<Process />} />
           <Route exact path="/internship" element={<Internship />} />
+          <Route exact path="/internshipdetail" element={<InternshipDetail />} />
           <Route exact path="/home" element={<Contnent/>} />
           <Route exact path="/about" element={<Aboutus/>} />
           <Route exact path="/contact" element={<ContactUs/>} />
