@@ -6,7 +6,7 @@
     position: relative;
     bottom: 0;
     left: 0;
-    height: 58  vh;
+    height: 44vh;
     width: 100%;   
 
 }
@@ -27,10 +27,13 @@
 
 ul{
     list-style-type: none;
+    font-size: 18px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 h4{
     padding-left: 40px;
     padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
 }
 .birender{
     margin-left: 23%;
@@ -38,10 +41,11 @@ h4{
 }
 
 h3{
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
     margin-right: 40px;
     color: #434343;
+    margin-top: 40px;
 }
 p{
     padding-left: 1%;
@@ -52,7 +56,10 @@ p{
     gap:30px;
     position: relative;
     left:20px;
-    top:30px;
+    top:25px;
     color: black;
    
 }
+/* .logo{
+
+} */

@@ -35,7 +35,7 @@ const LoginPage = () =>{
                     <form onSubmit={(e)=>{e.preventDefault();}} autoComplete="off">
                      <p id="welcome">Welcome Back!</p>
                         {/* <Logo/> */}
-                        <h1>Student Login</h1>
+                        <h1>Admin Login</h1>
                         <h2>Login to your account</h2>
                         <input type="email" name="e_mail" id="e_mail" placeholder="E-Mail" />
                         <div className="login-password">

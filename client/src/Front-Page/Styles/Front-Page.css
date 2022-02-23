@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     gap:30px;
+    color: #2ecc71;
     /* height: 100vh; */
     padding: 110px;
     
@@ -23,6 +24,9 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-shadow: -1px -1px 1px #a4b5c7b2;
   }
+  /* .front-page .login-opts .admin{
+    font
+  } */
   .front-page .login-opts {
     display: flex;
     justify-content: center;
@@ -32,11 +36,13 @@
     height: 130px;
   }
   .front-page .login-opts .fa-icons {
-    font-size: 40px;
+    font-size: 50px;
     color: #34495e;
+    margin-top: 10px;
+
   }
-  .front-page .login-opts .admin,
-  .front-page .login-opts .students {
+  .front-page .login-opts #admin,
+  .front-page .login-opts #students {
     cursor: pointer;
     border: 2px solid rgb(158, 155, 155);
     border-radius: 20px;
@@ -46,11 +52,25 @@
     align-items: center;
     gap: 10px;
     width: 50%;
+    margin-top: 5px;  
     height: 100%;
     color: #4a5561;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+
+a{
+  color: #34495e;
+  
+}
+a:hover{
+  background-color: transparent;
+}
+
+.login-btn:hover{ 
+  background-color: #2ecc71;
+  /* justify-content:end; */
+}
   /* .front-page .login-opts .admin {
   }
   .front-page .login-opts .students {

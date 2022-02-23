@@ -14,7 +14,7 @@ return (
  <div className="col-1"> 
  <div className='logo'>
  <a href='https://www.cuh.ac.in//' target="_blank" style={{textDecoration:'none'}}>
-     <img src={image1} style={{height:'150px', width: '150px', paddingLeft: '0.1px', marginTop: '30px'}}/>
+     <img src={image1} style={{height:'130px', width: '130px', paddingLeft: '0.1px', marginTop: '30px'}}/>
      </a>
     </div> 
    
@@ -33,7 +33,7 @@ return (
          <li>Campus Safety</li>
      </ul>
      <br></br>
-              <div className='icons' style={{marginLeft: '30px'}}>
+              <div className='icons' style={{marginLeft: '35px'}}>
         <a href='https://www.facebook.com/centraluniversityofharyanaofficial/' target="_blank" style={{textDecoration:'none'}}> <FaFacebook/></a>
         <a href='https://www.youtube.com/channel/UC0bisUxVLYPfAihXJLnNRJg'target="_blank" style={{textDecoration:'none'}}><FaYoutube/></a>
         <a href='https://twitter.com/CUHofficial'target="_blank" style={{textDecoration:'none'}}><BsTwitter/></a>

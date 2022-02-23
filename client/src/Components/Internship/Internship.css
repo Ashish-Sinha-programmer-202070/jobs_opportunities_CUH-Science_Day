@@ -1,0 +1,111 @@
+.imagei{
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    /* background-image: url(https://www.cuh.ac.in//resourcesharingportal/imagec/demo/009.jpg); */
+    background-image: url(https://www.redbackstudios.in/images/content/internship-in-vellore.jpg);
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+}
+.imagei .Floating-caption{
+   
+    height: 300px;
+    width: 1440px;
+    background-color: rgba(0, 0, 0, 0.767);
+    /* margin-left: 20px; */
+    border-radius: 5px;  
+}
+.imagei .Floating-caption .float_head{
+    color:rgb(136, 192, 214);
+    margin-top: 0px !important;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px; 
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 3px  rgb(43, 40, 40);
+    padding-left: 15px;
+} 
+.imagei .Floating-caption .float_txt{
+    text-align: left;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(168, 186, 221);
+    text-shadow: 0px 2px  rgb(43, 40, 40);
+    font-family: 'Roboto Slab', serif;
+    padding-left: 5px;
+    padding-top: 0px;
+
+}
+
+.new_margin p {
+    padding: 20px 0px;
+    font-style: oblique;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ashish{
+    font-size: 30px;
+    color: rgb(0, 255, 76);
+    padding-left: 600px;
+}
+/* .Text:p{
+    padding: 20px 0px;
+    font-style: oblique;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+} */
+
+.internbox{
+    padding-top: 50px;
+    padding-left: 30px;
+    text-align: center;
+    box-sizing: inherit;
+    gap: 10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: 1px 1px 1px red,
+               2px 2px 1px red; */
+
+
+    
+}
+.box {
+    /* width: 1300px;
+    height: 30px;
+    margin: 10px;
+    padding: 25px;
+    gap: 10px;
+    text-decoration:none; */
+
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: start;
+
+    /* box-sizing: border-box; */
+    /* box-sizing: inherit; */
+    /* box-sizing: initial; */
+
+    /* box-sizing: revert; */
+    /* box-sizing: unset; */
+    
+  }
+
+.box .details{
+    display: flex;
+    gap: 10px;
+    border:2px solid grey;
+    box-shadow: 2px 2px 3px rgba(63, 61, 61, 0.514);
+    margin:10px;
+    border-radius: 5px;
+} 
+.box .title{
+    display: flex;
+
+} 
+.interbox .box .h1{
+    color: blueviolet;
+}  
+.box .ul{
+    gap: 10;
+}
