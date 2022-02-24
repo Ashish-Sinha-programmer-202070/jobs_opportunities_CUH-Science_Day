@@ -37,10 +37,13 @@ const LoginPage = () =>{
             alert("Input fields are empty");
         }else{
             const res = await axios.post('http://localhost:5000/auth/login',{'email':email,'password':password});
-            if(res.data.status === 'success')
+            if(res.data.status === 'success'){
             localStorage.setItem('token',res.data.token);
-            else alert(res.data.msg);
-            navigate('/')
+            alert("Logged in")}
+            else {
+            alert(res.data.msg);
+            }
+            navigate('/dashboard')
         }
     }
     return ( 

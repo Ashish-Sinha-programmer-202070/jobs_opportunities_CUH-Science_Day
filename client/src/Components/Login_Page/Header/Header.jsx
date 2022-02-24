@@ -29,7 +29,7 @@ export default function Header() {
           <a class="nav-link  " href="#"> <Link to='/process'>Process</Link></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link"> <Link to='/internship'>Internships</Link></a>
+        <a class="nav-link"> <Link to='/internship'>Internships</Link></a>
         </li>       
         <li class="nav-item">
           <a class="nav-link"><Link to='/contact' style={{TextDecoration: 'none'}}>ContactUS</Link></a>
@@ -45,7 +45,12 @@ export default function Header() {
         <button class="btn btn-success" type="submit"><Link to='/front'>Login</Link> </button>
         <button className="btn btn-success sig" type="submit"><Link to='/signup'>SignUp</Link> </button>
         </>
-        :null}
+        : 
+        <>
+        <button class="btn btn-success" type="submit"><Link to='/dashboard'>Dashboard</Link> </button>
+        <button class="btn btn-success" type="submit"><Link to='/'>Logout</Link> </button>
+        </>
+      }
       </form>
     </div>
   </div>
