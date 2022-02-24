@@ -2,8 +2,16 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import "./Header.css";
 import cuh_logo from '../../../Front-Page/Images/cuh_logo.png';
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Header() {
+  const [isLogged,setLogged] = useState(false);
+  useEffect(()=>{
+    if(localStorage.getItem('token') !== null){
+        setLogged(true);
+    }
+},[]);
   return (
    
     <nav class="cla navbar navbar-expand-lg navbar-light ">
@@ -32,8 +40,12 @@ export default function Header() {
       </ul>
       <form class="d-flex">
         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> */}
+        {!isLogged?
+        <>
         <button class="btn btn-success" type="submit"><Link to='/front'>Login</Link> </button>
         <button className="btn btn-success sig" type="submit"><Link to='/signup'>SignUp</Link> </button>
+        </>
+        :null}
       </form>
     </div>
   </div>

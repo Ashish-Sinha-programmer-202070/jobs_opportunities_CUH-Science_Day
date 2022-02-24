@@ -3,6 +3,7 @@ import members from './members';
 import Header from '../Login_Page/Header/Header';
 import Footer from '../Login_Page/Footer/Footer';
 import {Fragment, useState} from 'react';
+import { useEffect } from 'react';
 const ImgCircle = (props)=>{
     return(
         <div className="con_img_dess">
@@ -16,6 +17,7 @@ const ImgCircle = (props)=>{
 function Content() {
     const [people,changePeople] = useState(members.filter((member,index)=>{return member.role == "teacher"}));
     const [msg,changeMsg] = useState(false);
+
 
   return (
       <>
