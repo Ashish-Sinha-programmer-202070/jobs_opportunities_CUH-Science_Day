@@ -1,0 +1,12 @@
+#internship-image{
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    background-image: url(https://www.redbackstudios.in/images/content/internship-in-vellore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.Cards{
+    display: inline-block;
+    margin:15px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.4);
+} 

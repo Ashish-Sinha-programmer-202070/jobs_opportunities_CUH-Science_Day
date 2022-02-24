@@ -5,34 +5,7 @@ import cuh_logo from '../../../Front-Page/Images/cuh_logo.png';
 
 export default function Header() {
   return (
-    // <header className="Header">
-     
-    //   <nav className="Nav">
-
-    //     <a  className="Box logo" href="/"> <img src= {cuh_logo} alt="cuh_logo" /></a>
-    //     <div className="header-options">
-
-    //     <a  className="Box" href="/"><Link to='/home'>Home</Link></a>
-    //     <a  className="Box" href="/"> <Link to='/process'>Process</Link></a>
-    //     <a  className="Box" href="/"> <Link to='/internship'>Internship</Link></a>
-    //     <div className="dropdown">
-    //       <button className="dropbtn">Departement</button>
-    //       <div className="dropdown-content">
-    //         <a href="#">Link 1</a>
-    //         <a href="#">Link 2</a>
-    //         <a href="#">Link 3</a>
-    //       </div>
-    //     </div>
-    //     {/* <a  className="Box" href="/"></a> */}
-    //     <a  className="Box" href="/"><Link to='/about' style={{TextDecoration: 'none'}}>About US</Link></a>
-    //     <a  className="Box" href="/">Contact US</a>
-    //     <div className="button">
-    //     <button className="button button2"><Link to='/Login'>Login</Link> </button>
-    //     <span>|</span><button className="button button2"><Link to='/SignUp'>SignUp</Link></button>
-    //     </div>
-    //     </div>
-    //   </nav>
-    // </header>
+   
     <nav class="cla navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <a class="navbar-brand Box logo" href="#"><img src= {cuh_logo} alt="cuh_logo" /></a>
@@ -60,7 +33,7 @@ export default function Header() {
       <form class="d-flex">
         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> */}
         <button class="btn btn-success" type="submit"><Link to='/front'>Login</Link> </button>
-        <button className="btn btn-success sig" type="submit"><Link to='/front'>SignUp</Link> </button>
+        <button className="btn btn-success sig" type="submit"><Link to='/signup'>SignUp</Link> </button>
       </form>
     </div>
   </div>

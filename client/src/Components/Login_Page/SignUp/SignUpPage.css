@@ -124,3 +124,16 @@
     position: relative;
     left: 80px;
   }
+
+ .gender{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:20px;
+   font-size: 15px;
+ }
+ .gender label{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
