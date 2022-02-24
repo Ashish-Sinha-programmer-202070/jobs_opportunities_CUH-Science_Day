@@ -28,6 +28,16 @@ const LoginPage = () =>{
         }
         
     }
+
+    const handleLogin = ()=>{
+        const email = document.getElementById('e_mail').value;
+        const password = document.getElementById('password').value;
+        if(email === '' || password===''){
+            alert("Input fields are empty");
+        }else{
+            2
+        }
+    }
     return ( 
         <div className="login-page-container">
             <div className="login-page">
