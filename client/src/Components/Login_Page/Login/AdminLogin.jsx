@@ -12,8 +12,9 @@ import login_img from './Images/cuh_logo.png';
 //     }
 // }
 // );
-
 const LoginPage = () =>{
+    const [emailId, setEmailId]  = useState('');
+    const [password, setPassword] = useState('');
     
    
     const handleViewPassword=()=>{
@@ -29,14 +30,15 @@ const LoginPage = () =>{
         
     }
 
-    const handleLogin = ()=>{
-        const email = document.getElementById('e_mail').value;
-        const password = document.getElementById('password').value;
-        if(email === '' || password===''){
-            alert("Input fields are empty");
-        }else{
-            2
+    const handleLogin = async(req, res)=>{
+        req = await axios.post('http://localhost:5000/auth/login',
+        {
+            email: emailId,
+            password: password
         }
+        )
+        alert('Successfully logged in')
+
     }
     return ( 
         <div className="login-page-container">
@@ -46,14 +48,28 @@ const LoginPage = () =>{
                     <form onSubmit={(e)=>{e.preventDefault();}} autoComplete="off">
                      <p id="welcome">Welcome Back!</p>
                         {/* <Logo/> */}
-                        <h1>Student Login</h1>
+                        <h1>Admin Login</h1>
                         <h2>Login to your account</h2>
-                        <input type="email" name="e_mail" id="e_mail" placeholder="E-Mail" />
+                        <input 
+                            type="email" 
+                            name="e_mail" 
+                            id="e_mail" 
+                            placeholder="E-Mail"
+                            onChange={(e)=> setEmailId(e.target.value)}
+                            value={emailId}
+                         />
                         <div className="login-password">
-                            <input type="password" name="password" id="password" placeholder="Password" />
+                            <input 
+                               type="password" 
+                               name="password" 
+                               id="password" 
+                               placeholder="Password"
+                               onChange={(e)=>setPassword(e.target.value)}
+                               value={password} 
+                            />
                             <i onClick={handleViewPassword} className="fas fa-eye-slash input-pass"></i>
                         </div>
-                      <input type="submit"  value="Log In"/>
+                      <input type="submit" onClick={handleLogin}  value="Log In"/>
                         
                         <p id="new-here">
                         <Link to='/SignUp'>New Here? sign-up instead</Link>

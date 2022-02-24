@@ -9,10 +9,10 @@ function Process() {
     <>
     <Header/>
         <div>
-      <div className="image">
-          <div className="Floating-caption">
-             <p className="float_head"> INTERNSHIP PROCESS </p>
-             <p className="float_txt"> 
+      <div className="imagea">
+          <div className="Floating-captionx">
+             <p className="float_heada"> INTERNSHIP PROCESS </p>
+             <p className="float_txta"> 
              <span>→ Pre Internship Talk</span> <br></br> <hr></hr>
              <span>→ Submission of CV's</span> <br></br>  <hr></hr>
              <span>→ Group Discussions and Tests</span> <br></br> <hr></hr>

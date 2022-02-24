@@ -45,3 +45,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
+@media screen and (max-width:450px){
+  .swiper {
+    display: none;
+  }
+
+} 
