@@ -1,21 +1,50 @@
 
-.sig{
-  margin-left: 10px;
+
+.cuh_logoHeader{
+width: 4.5vw;
+height: fit-content;
 }
-.Box img{
- height: 50px;
+.btnLgnSgn{
+padding-top: 1vh;
+padding-left: 3vh;
+padding-right: 3vh;
+padding-bottom: vh;
+font-size: 1.2rem;
+color: white;
+background: linear-gradient(45deg, black, transparent);
+text-align: center;
+margin-left: 1.5vw;
 }
-.cla{
-background-color: #4CAF50;
+.tabs{
+  text-decoration: none;
+  color: white;
+  justify-content: center;
 }
-.btn{
-color: #fff;
+.navbar{
+  width: 100vw;
+  height: 12vh;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+}
+.unOrderList{
+  display: flex;
+  justify-content: center;
+  color: white;
+  place-items: center;
+  list-style-type: none;
+  margin: 0px;
+}
+.listNode{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 3vw;
 
 }
-.nav-link{
-font-size: 170%;
-color: #fff;
-}
-.nav-item a{
-color: #fff;  
+
+@media only screen and (max-width:700px) {
+  
 }

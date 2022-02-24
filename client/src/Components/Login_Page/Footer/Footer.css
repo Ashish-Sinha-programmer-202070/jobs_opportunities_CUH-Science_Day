@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
 }
-.col-1 a h3{
+.cuh_name{
     font-size: 20px;
     font-size: 27px;
     text-align: center;
@@ -40,17 +40,12 @@
     flex-direction: column;
 }
 
-ul{
+.list-unstyled{
     list-style-type: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-ul li a{
-    color: #000;
-    text-decoration: none;
-}
-p{
-    padding-left: 1%;
-}
+ 
+
 .icons{
     font-size: 30px;
     display: flex;
@@ -65,10 +60,11 @@ p{
         display: flex;
         flex-direction: column;
     }
+    
     .col{
         width: 100%;
     }
-    .col-1 a h3{
+    .cuh_name{
         font-size: 25px;
     }
 }
