@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Header.css";
 import cuh_logo from '../../../Front-Page/Images/cuh_logo.png';
 import { useState } from "react";
@@ -12,8 +12,7 @@ export default function Header() {
         setLogged(true);
     }
 },[]);
-  return (
-   
+  return (   
     <nav class="cla navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <a class="navbar-brand Box logo" href="#"><img src= {cuh_logo} alt="cuh_logo" /></a>
@@ -57,5 +56,4 @@ export default function Header() {
 </nav>
     
   );
-  
 }

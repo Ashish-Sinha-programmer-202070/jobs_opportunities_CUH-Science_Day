@@ -18,7 +18,7 @@ const Footer = () => {
                         </div>
 
                         <a href='https://www.cuh.ac.in//' target="_blank" style={{ textDecoration: 'none' }}>
-                            <h3>Central University of Haryana</h3>
+                            <h3 className='cuh_name'>Central University of Haryana</h3>
                         </a>
 
                     </div>
@@ -26,10 +26,10 @@ const Footer = () => {
                     <div className="col-2 col">
                         <h4>About Us</h4>
                         <ul className="list-unstyled">
-                            <li><a href='#'>Privacy Policy</a></li>
-                            <li><a href='#'>Terms and Conditions</a></li>
-                            <li><a href='#'>Services</a></li>
-                            <li><a href='#'>Campus Safety</a></li>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
+                            <li>Services</li>
+                            <li>Campus Safety</li>
                         </ul>
                         <div className='icons'>
                             <a href='https://www.facebook.com/centraluniversityofharyanaofficial/' target="_blank" style={{ textDecoration: 'none' }}> <FaFacebook /></a>
@@ -42,10 +42,10 @@ const Footer = () => {
                     <div className="col-3 col">
                         <h4 >Explore</h4>
                         <ul className="list-unstyled">
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'>About</a></li>
-                            <li><a href='#'>Capabilities </a></li>
-                            <li><a href='#'>Careers</a></li>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Capabilities </li>
+                            <li>Careers</li>
                         </ul>
                     </div>
                 </div>
