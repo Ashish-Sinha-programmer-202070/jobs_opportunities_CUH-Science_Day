@@ -1,11 +1,12 @@
 import './LoginPage.css';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import login_img from './Images/cuh_logo.png';
 
 
 
 const LoginPage = () =>{
     
+    const navigate = useNavigate();
    
     const handleViewPassword=()=>{
         let password = document.getElementById("password");
@@ -20,11 +21,20 @@ const LoginPage = () =>{
         
     }
 
-    const handleLogin = ()=>{
+    const handleLogin = async()=>{
         const email = document.getElementById('e_mail').value;
         const password = document.getElementById('password').value;
         if(email === '' || password===''){
             alert("Input fields are empty");
+        }else{
+            const res = await axios.post('http://localhost:5000/auth/login',{'email':email,'password':password});
+            if(res.data.status === 'success'){
+            localStorage.setItem('token',res.data.token);
+            alert("Logged in")}
+            else {
+            alert(res.data.msg);
+            }
+            navigate('/dashboard')
         }
     }
     return ( 
@@ -42,7 +52,7 @@ const LoginPage = () =>{
                             <input type="password" name="password" id="password" placeholder="Password" />
                             <i onClick={handleViewPassword} className="fas fa-eye-slash input-pass"></i>
                         </div>
-                      <button type="submit"  value="Log In">Login</button>
+                      <input type="submit" onClick={handleLogin}  value="Log In"/>
                         
                         <p id="new-here">
                         <Link to='/SignUp'>New Here? sign-up instead</Link>
