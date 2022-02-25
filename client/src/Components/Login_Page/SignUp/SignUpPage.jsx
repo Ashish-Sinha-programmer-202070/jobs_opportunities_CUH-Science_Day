@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const SignUpPage = () => {
     const navigate = useNavigate();
     const [signup,setSignup] = useState([]);
+    
     useEffect(async()=>{
         const res = await axios.post('http://localhost:5000/auth/signup');
         setSignup(res.data.data);
@@ -61,13 +62,10 @@ const SignUpPage = () => {
                 navigate('/');
             }else{
                 alert(res.data.msg);
-            }
-            
-        }
-            
-           
-    
+            }   
+        }   
     }
+
     const checkPassword = (e)=>{
         if (password === e.target.value){
             e.target.style.borderBottom = "4px solid rgb(63, 240, 157)";
@@ -75,6 +73,7 @@ const SignUpPage = () => {
             e.target.style.borderBottom = "4px solid red";
         }
     }
+
     const handleViewPassword=()=>{
         let password2 = document.getElementById("password_retype");
         let eyeSlash = document.querySelector('.fa-eye-slash');
@@ -85,9 +84,9 @@ const SignUpPage = () => {
             let eye = document.querySelector('.fa-eye');
             eye.classList.replace('fa-eye','fa-eye-slash');
             password2.type = 'password';
-        }
-        
+        }   
     }
+
     return ( 
         <div className="signup-page-container">
             <div className="signup-page">

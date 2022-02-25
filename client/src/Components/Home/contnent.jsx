@@ -25,7 +25,7 @@ function Content() {
             <div className="body">
                 <div className="image101">
                 <div className="Floating-captions">
-                <p className="float_heads"> INTERNSHIP CELL </p>
+                <p className="float_heads"> PLACEMENT CELL </p>
                 <p className="float_txts">CENTRAL UNIVERSITY OF HARYANA</p>
                 </div>
                 </div>

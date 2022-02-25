@@ -4,6 +4,8 @@ import axios from "axios";
 import './LoginPage.css';
 import {Link} from 'react-router-dom';
 import login_img from './Images/cuh_logo.png';
+import { useNavigate} from 'react-router-dom';
+
 
 
 // useEffect(async() => {
@@ -13,6 +15,7 @@ import login_img from './Images/cuh_logo.png';
 // }
 // );
 const LoginPage = () =>{
+    const navigate = useNavigate();
     const [emailId, setEmailId]  = useState('');
     const [password, setPassword] = useState('');
     
@@ -30,15 +33,21 @@ const LoginPage = () =>{
         
     }
 
-    const handleLogin = async(req, res)=>{
-        req = await axios.post('http://localhost:5000/auth/login',
-        {
-            email: emailId,
-            password: password
+    const handleLogin = async()=>{
+        const email = document.getElementById('e_mail').value;
+        const password = document.getElementById('password').value;
+        if(email === '' || password===''){
+            alert("Input fields are empty");
+        }else{
+            const res = await axios.post('http://localhost:5000/auth/login',{'email':email,'password':password});
+            if(res.data.status === 'success'){
+            localStorage.setItem('token',res.data.token);
+            alert("Logged in")}
+            else {
+            alert(res.data.msg);
+            }
+            navigate('/dashboard')
         }
-        )
-        alert('Successfully logged in')
-
     }
     return ( 
         <div className="login-page-container">
