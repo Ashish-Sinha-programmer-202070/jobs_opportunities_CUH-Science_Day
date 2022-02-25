@@ -1,17 +1,8 @@
-// import  React from 'react';
-import React, {useState,useEffect} from "react";
-import axios from "axios";
 import './LoginPage.css';
 import {Link, useNavigate} from 'react-router-dom';
 import login_img from './Images/cuh_logo.png';
 
 
-// useEffect(async() => {
-//     async function postData(){
-//         const res = await axios.post(`http://localhost:5000/auth/login`,{})
-//     }
-// }
-// );
 
 const LoginPage = () =>{
     
@@ -49,11 +40,11 @@ const LoginPage = () =>{
     return ( 
         <div className="login-page-container">
             <div className="login-page">
-                <img  src={login_img} alt="person unlocking a lock"  />
+                <img  src={login_img} alt="person unlocking a lock" className='cuh_logoLogin' />
                 <div className="login-form">
                     <form onSubmit={(e)=>{e.preventDefault();}} autoComplete="off">
                      <p id="welcome">Welcome Back!</p>
-                        {/* <Logo/> */}
+                      
                         <h1>Student Login</h1>
                         <h2>Login to your account</h2>
                         <input type="email" name="e_mail" id="e_mail" placeholder="E-Mail" />

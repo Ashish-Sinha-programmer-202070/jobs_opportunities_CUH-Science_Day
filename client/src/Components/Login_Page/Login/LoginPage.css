@@ -1,134 +1,207 @@
 /*      Login Page     */
 .login-page-container {
-    padding: 35px 100px ;
-    margin-top: 10%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    fill: rgb(125, 126, 235);
-    background-size: 642px 642px;
-    background-repeat: repeat;
-    
-  }
-  .login-page {
-    background: linear-gradient(
-      90deg,
-      #6eb6e6,
-      #e8eefe,
-      60%,
-      #13f7b2,
-      60%,
-      #ffffff
-    );
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: space-around;
-    border-radius: 30px;
-  }
-  .login-page .login-form {
-    /* border: 2px solid black; */
-    width: 35.5%;
-    display: grid;
-    place-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .login-page .login-form .logo {
-    margin: 35px 5px;
-    margin-top: 35px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center ;
+  background-color: rgb(255, 255, 255);
+  fill: rgb(125, 126, 235);
+  background-size: 642px 642px;
+  background-repeat: repeat;
+}
+.login-page {
+  background: linear-gradient(
+    90deg,
+    #6eb6e6,
+    #e8eefe,
+    56%,
+    #13f7b2,
+    56%,
+    #ffffff
+  );
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 2vh;
+  
+}
+.login-form {
+  /* border: 2px solid black; */
+  width: 43.5%;
+  display: flex;
+  /* place-content: center; */
+  place-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-left: 6vw;
+}
+/* .logo {
+  margin: 35px 5px;
+  margin-top: 35px;
+  position: relative;
+  left: 10px;
+}
+.login-page .login-form .logo p:nth-child(1) {
+  background-color: rgb(78, 122, 255);
+}
+.login-page .login-form .logo p:nth-child(2) {
+  color: rgb(78, 122, 255);
+} */
+.login-page .login-form #welcome {
+  position: absolute;
+  top: 1vh;
+  left: 5vw;
+  padding: 9px 13px;
+  background: linear-gradient(
+    130deg,
+    rgb(47, 113, 255),
+    #7d97f4,
+    rgb(78, 122, 255)
+  );
+  color: white;
+  border-radius: 0px 40px 40px 0px;
+}
+input {
+  font-size: 15px;
+  display: block;
+  
+  padding: 7px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(179, 178, 178);
+}
+input:focus {
+  border-bottom: 4px solid steelblue;
+}
+.login-form [type="submit"] {
+  background-color: rgb(82, 145, 197);
+  color: white;
+  border: none;
+  width: 50%;
+  padding: 4px 0px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 1px 2px 17px rgba(0, 0, 0, 0.4);
+}
+.login-form [type="submit"]:focus {
+  border: none;
+}
+ .cuh_logoLogin {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.login-page .login-form h1 {
+  color: rgb(33, 225, 231);
+  font-size: 30px;
+  margin-top: 8vh;
+}
+
+
+h2{
+  margin-top: 3vh;
+  color: rgb(128, 122, 119);
+  text-align: center;
+
+}
+.login-form .login-password {
+  display: flex;
+  align-items: center;
+  /* margin: 30px 15px; */
+  width: 100%;
+  position: relative;
+}
+/* .login-form .login-password input {
+  margin: 0px;
+  width: 100%;
+  
+} */
+.login-form .input-pass {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+.p forget-password {
+  color: blue;
+}
+
+@media only screen and (min-width:750.9px)  {
+  h2{
     position: relative;
     left: 10px;
   }
-  .login-page .login-form .logo p:nth-child(1) {
-    background-color: rgb(78, 122, 255);
+  input{
+    margin:2vh,6vw
   }
-  .login-page .login-form .logo p:nth-child(2) {
-    color: rgb(78, 122, 255);
+  #password{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vw;
   }
-  .login-page .login-form #welcome {
-    position: absolute;
-    top: 15px;
-    left: 1px;
-    padding: 9px 13px;
-    background: linear-gradient(
-      130deg,
-      rgb(47, 113, 255),
-      #7d97f4,
-      rgb(78, 122, 255)
-    );
-    color: white;
-    border-radius: 0px 40px 40px 0px;
+  #e_mail{
+    margin-top: 4vh;
+    margin-left: 4vw;
+
   }
-  .login-page .login-form input {
-    font-size: 15px;
-    display: block;
-    margin: 30px 15px;
-    padding: 7px 12px;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid rgb(179, 178, 178);
-  }
-  .login-page .login-form input:focus {
-    border-bottom: 4px solid steelblue;
-  }
-  .login-page .login-form [type="submit"] {
-    background-color: rgb(82, 145, 197);
-    color: white;
-    border: none;
-    width: 50%;
-    padding: 11px 0px;
-    margin: auto;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 1px 2px 17px rgba(0, 0, 0, 0.4);
-  }
-  .login-page .login-form [type="submit"]:focus {
-    border: none;
-  }
-  .login-page img {
-    width: 43%;
+}
+
+ @media only screen and (max-width:750px)  {
+  .cuh_logoLogin {
+    width: 116%;
     display: flex;
     align-items: center;
+    margin-left: 0vw  ;
   }
-  .login-page .login-form h1 {
-    color: rgb(33, 225, 231);
-    position: relative;
-    left: 15px;
-    bottom: 30px;
-    font-size: 30px;
+  .login-page-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
   }
-  .login-page .login-form h2 {
-    color: rgb(128, 122, 119);
-    position: relative;
-    left: 10px;
-  }
-  
-  .login-form .login-password {
+  .login-page{
     display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    /* border: 2px solid darkblue; */
-    /* border-bottom: 3px solid rgb(179, 178, 178); */
-    margin: 30px 15px;
-    width: 100%;
-    position: relative;
+    flex-direction: column;
+    place-items: center;
+    background: linear-gradient( 180deg, #6eb6e6, #e8eefe, 59%, #b3f5e1, 89%, #ffffff );
+    width:90%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
   }
-  .login-form .login-password input {
-    margin: 0px;
-    width: 100%;
-    /* border: none; */
+  .login-page .cuh_logoLogin{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:55%;
   }
-  .login-form .input-pass {
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-  }
-  .p forget-password {
-    
-      color: blue;
- 
+  /* input{
+    margin:2vh,0vh
+  } */
+  #welcome{
+    display: none;
   }
   
+
+  h2{
+    margin-top: 4vh;
+    color:rgb(255 134 74);
+  }
+  #password{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  #e_mail{
+    margin-top: 4vh;
+  }
+  .login-form{
+    width:85%;
+  }
+}

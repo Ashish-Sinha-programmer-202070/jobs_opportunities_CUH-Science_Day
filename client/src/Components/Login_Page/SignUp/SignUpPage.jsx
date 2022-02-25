@@ -1,10 +1,9 @@
-import React, {  useState } from 'react';
- import  './SignUpPage.css';
- import signup_img from '../../../Front-Page/Images/cuh_logo.png';
- import axios from "axios";
+import React, { useState } from "react";
+import "./SignUpPage.css";
+import signup_img from "../../../Front-Page/Images/cuh_logo.png";
+import axios from "axios";
 import { useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
     const navigate = useNavigate();
@@ -125,7 +124,9 @@ const SignUpPage = () => {
                 </div>
             </div> 
         </div>
-     );
-}
- 
+      </div>
+    </div>
+  );
+};
+
 export default SignUpPage;
