@@ -35,7 +35,7 @@ export default function Header() {
    
     <nav className="cla navbar navbar-expand-lg navbar-light ">
   <div className="container-fluid">
-    <Link className="navbar-brand Box logo" to="/"><img src= {cuh_logo} alt="cuh_logo" /></Link>
+    <Link className="navbar-brand Box logo" to="/"><img src= {cuh_logo} alt="cuh_logo" height={60} width={60} /></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
