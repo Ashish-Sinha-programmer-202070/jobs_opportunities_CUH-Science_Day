@@ -1,6 +1,6 @@
 import './contnent.css';
 import members from './members';
-import Header from '../Login_Page/Header/Header';
+
 import Footer from '../Login_Page/Footer/Footer';
 import {Fragment, useState} from 'react';
 import { useEffect } from 'react';
@@ -10,7 +10,11 @@ const ImgCircle = (props)=>{
             <div className="con_images">
                 <img src={props.img} alt="profice picture"/>
             </div>
-            <p className="detail_members">{props.des}</p>
+            <div className="details">
+                <p className="detail_members">{props.des}</p>
+                <p className="qualification" style={{fontSize:"15px"}}>{props.qual}</p>
+
+            </div>
         </div>
     );
 }
@@ -21,7 +25,7 @@ function Content() {
 
   return (
       <>
-      <Header/>
+  
             <div className="body">
                 <div className="image101">
                 <div className="Floating-captions">
@@ -39,11 +43,11 @@ function Content() {
                 </div>
                 <div className="con_profiles">
                     {people.map((member,index)=>{
-                        return <ImgCircle className="image-containers" img={member.img} des={member.des} key={index}/>  
+                        return <ImgCircle className="image-containers" img={member.img} des={member.des} qual={member.qual} key={index}/>  
                     })}
                 {msg?<p className='teacher_msgs'>
-                    <h3 className='teacher_msg_heads'>Message from Internship cell</h3>
-                    The Internship Cell at Centyral University of Haryana is a 
+                    <h3 className='teacher_msg_heads'>Message from Placement cell</h3>
+                    The Placement Cell at Centyral University of Haryana is a 
                     student led initiative that has been doing commendable work
                         in facilitating the transition from formal education
                         to professional careers for increasing numbers of our 

@@ -1,0 +1,21 @@
+.dashboard{
+    padding-top:60px
+}
+.opp{
+    text-decoration: none;
+    color: white;
+    padding:5px 10px;
+    border-radius: 7px;
+    background-color: rgb(24, 134, 67);
+}
+.opp:hover{
+    background-color: rgb(24, 134, 67);
+    color: white;
+
+}
+.total-opp{
+    text-align: right;
+    padding: 10px;
+    margin-right: 70px;
+    font-size: 16px;
+}

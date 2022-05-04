@@ -1,7 +1,6 @@
 /*      Login Page     */
 .login-page-container {
-    padding: 35px 100px ;
-    margin-top: 10%;
+    padding:  100px ;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     fill: rgb(125, 126, 235);
@@ -23,6 +22,7 @@
     display: flex;
     justify-content: space-around;
     border-radius: 30px;
+    padding:50px 30px;
   }
   .login-page .login-form {
     /* border: 2px solid black; */
@@ -46,6 +46,7 @@
     color: rgb(78, 122, 255);
   }
   .login-page .login-form #welcome {
+    display:none;
     position: absolute;
     top: 15px;
     left: 1px;
@@ -99,6 +100,7 @@
     left: 15px;
     bottom: 30px;
     font-size: 30px;
+    padding:10px;
   }
   .login-page .login-form h2 {
     color: rgb(128, 122, 119);

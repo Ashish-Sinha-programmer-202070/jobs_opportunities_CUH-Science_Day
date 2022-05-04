@@ -2,18 +2,26 @@ import React, {  useState } from 'react';
  import  './SignUpPage.css';
  import signup_img from '../../../Front-Page/Images/cuh_logo.png';
  import axios from "axios";
+ import Header from '../Header/Header';
 import { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from "../../../context/AuthContext";
+
 
 
 const SignUpPage = () => {
+
     const navigate = useNavigate();
     const [signup,setSignup] = useState([]);
-    
-    useEffect(async()=>{
-        const res = await axios.post('http://localhost:5000/auth/signup');
-        setSignup(res.data.data);
+    const {isLogged,setLogged} = useContext(AuthContext);
+
+    useEffect(()=>{
+        if(isLogged){
+            navigate('/');
+        }
     },[]);
+   
    
     const [f_name,setFname] = useState("");
     const [l_name,setLname] = useState("");
@@ -59,6 +67,7 @@ const SignUpPage = () => {
             
             if(res.data.status === 'success'){
                 localStorage.setItem('token',res.data.token);
+                setLogged(true);
                 navigate('/');
             }else{
                 alert(res.data.msg);
@@ -88,6 +97,7 @@ const SignUpPage = () => {
     }
 
     return ( 
+       <>
         <div className="signup-page-container">
             <div className="signup-page">
                 <div className="img-box">
@@ -100,12 +110,13 @@ const SignUpPage = () => {
                         <div className="full-name">
                             <input value={f_name} onChange={(e)=>{setFname(e.target.value)}} type="text" name="first_name" id="first_name" placeholder="First Name" />
                             <input value={l_name} onChange={(e)=>{setLname(e.target.value)}} type="text" name="last_name" id="last_name" placeholder="Last Name" />
-                            <input value={department} onChange={(e)=>{setdepartment(e.target.value)}} type="text" name="department" id="department" placeholder="Department" />
+                            
                         </div>
+                            <input value={department} onChange={(e)=>{setdepartment(e.target.value)}} type="text" name="department" id="department" placeholder="Department" />
                         <input value={e_mail} onChange={(e)=>{setEmail(e.target.value.toLocaleLowerCase())}} type="email" name="e_mail" id="e_mail" placeholder="E-mail" />
                         <input value={skill} onChange={(e)=>{setskill(e.target.value.toLocaleLowerCase())}} type="text" name="skill" id="skill" placeholder="Skill" />
-                        <p>Gender: </p>
                         <div className="gender">
+                        <span>Gender: </span>
                             <label htmlFor="male">
                             <input type="radio" id="male" name="gender" value="Male"/>
                                Male </label>
@@ -125,7 +136,9 @@ const SignUpPage = () => {
                 </div>
             </div> 
         </div>
+    </>
      );
+    
 }
  
 export default SignUpPage;

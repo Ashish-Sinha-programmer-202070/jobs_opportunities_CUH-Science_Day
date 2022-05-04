@@ -6,11 +6,11 @@ import propic5 from '../Home/Images/rajesh.jpeg';
 
 
 const members = [
-    {name:"A",role:"teacher",img:propic1, des:"Dr.Vikas Garg",deg:"(chief coordinator)",mob:"+94457828521" },
-    {name:"D",role:"teacher",img:propic2, des:"Dr. Mukta ",deg:"(chief coordinator)",mob:"+97457824521" },
-    {name:"C",role:"teacher",img:propic3, des:"Sumit Saini",deg:"(chief coordinator)",mob:"+96457824521"},
-    {name:"D",role:"teacher",img:propic4, des:"Vikas Kumar",deg:"(chief coordinator)",mob:"+94457824521"},
-    {name:"E",role:"teacher",img:propic5, des:"Rajesh Kumar Dubey",deg:"(chief coordinator)",mob:"+99457824521"},
+    {name:"A",role:"teacher",img:propic1, des:"Dr.Vikas Garg",deg:"(coordinator)",mob:"+94457828521" },
+    {name:"D",role:"teacher",img:propic2, des:"Dr. Mukta ",deg:"(coordinator)",mob:"+97457824521" },
+    {name:"C",role:"teacher",img:propic3, des:"Sumit Saini",deg:"(coordinator)",mob:"+96457824521"},
+    {name:"D",role:"teacher",img:propic4, des:"Vikas Kumar",deg:"(coordinator)",mob:"+94457824521"},
+    {name:"E",role:"teacher",img:propic5, des:"Rajesh Kumar Dubey",deg:"(coordinator)",mob:"+99457824521"},
     // {name:"Aa",role:"co-ordinator",img:propic5, des:"coord1"},
     // {name:"Bb",role:"co-ordinator",img:propic6, des:"coord2"},
     // {name:"Cc",role:"co-ordinator",img:propic7, des:"coord3"},

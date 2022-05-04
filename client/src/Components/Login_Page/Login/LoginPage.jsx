@@ -1,9 +1,11 @@
 // import  React from 'react';
-import React, {useState,useEffect} from "react";
+import React, {useState,useEffect, useContext} from "react";
 import axios from "axios";
 import './LoginPage.css';
 import {Link, useNavigate} from 'react-router-dom';
 import login_img from './Images/cuh_logo.png';
+import { AuthContext } from "../../../context/AuthContext";
+
 
 
 // useEffect(async() => {
@@ -16,7 +18,14 @@ import login_img from './Images/cuh_logo.png';
 const LoginPage = () =>{
     
     const navigate = useNavigate();
-   
+    const {isLogged,setLogged} = useContext(AuthContext);
+    
+
+    useEffect(()=>{
+        if(isLogged){
+            navigate('/');
+        }
+    },[]);
     const handleViewPassword=()=>{
         let password = document.getElementById("password");
         let eye = document.querySelector('.input-pass');
@@ -39,11 +48,13 @@ const LoginPage = () =>{
             const res = await axios.post('http://localhost:5000/auth/login',{'email':email,'password':password});
             if(res.data.status === 'success'){
             localStorage.setItem('token',res.data.token);
-            alert("Logged in")}
+            setLogged(true);
+            navigate('/');
+            // alert("Logged in");
+            }
             else {
             alert(res.data.msg);
             }
-            navigate('/dashboard')
         }
     }
     return ( 

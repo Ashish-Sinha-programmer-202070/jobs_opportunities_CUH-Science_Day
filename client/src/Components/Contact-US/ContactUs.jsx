@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import './ContactUS.css';
 import members from './members';
-import Header from '../Login_Page/Header/Header';
+
 import Footer from '../Login_Page/Footer/Footer';
 const ImgCircle = (props) => {
   return (
-  <>    
-    
     <div className="con_img_des">
       <div className="con_image">
         <img src={props.img} alt="profice picture" />
@@ -15,15 +13,14 @@ const ImgCircle = (props) => {
       <p className='deeg_member'>{props.deg}</p>
       <p className='deeg_member_num'>{props.mob}</p>
     </div>
-   </> 
   );
 }
 function Contact() {
   const [people, changePeople] = useState(members.filter((member, index) => { return member.role == "teacher" }));
 
   return (
-<>
-<Header/>  
+<div className='contact-us'>    
+
     <div className="body">
       <div className='img'>
         <div className='float_div'>
@@ -49,7 +46,7 @@ function Contact() {
 
     </div>
    <Footer/> 
-</>   
+</div>   
   );
 }
 

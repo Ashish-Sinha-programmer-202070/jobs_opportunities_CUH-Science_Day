@@ -27,10 +27,13 @@
 .card img{
     width: 400px;
 } */
-
+#internship-image{
+    padding-top: 80px;
+}
 .virtual-courses-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 }
@@ -161,3 +164,4 @@
     }
 
 }
+

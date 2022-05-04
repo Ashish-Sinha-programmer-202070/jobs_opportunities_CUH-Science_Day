@@ -11,7 +11,7 @@ create table users(
     last_name VARCHAR(200) NOT NULL,
     gender VARCHAR(10) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
-    dept_id BIGINT REFERENCES department(dept_id),
+    dept_id BIGINT REFERENCES department(dept_id),  -- foreig key
     skills TEXT,
     password TEXT NOT NULL; 
 );
@@ -24,7 +24,9 @@ create table intership_details(
     skill_set TEXT,
     deadline DATE,
     offcial_link TEXT,
-    on_campus VARCHAR(3)
+    on_campus VARCHAR(3),
+    company_img text,
+    batch_year int
 );
 
 -- department data

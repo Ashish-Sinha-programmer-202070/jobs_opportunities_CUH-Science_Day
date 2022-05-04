@@ -19,26 +19,34 @@ function Admin() {
         let department = document.getElementById("department_name").value;
         let deadline = document.getElementById("deadline_time").value;
         let description = document.getElementById("description_name").value;
-        let link = document.getElementById("link_").value;
+        let link = document.getElementById("link").value;
         let skills = document.getElementById("skill_set").value;
-        
+        let img = document.querySelector('#img').files[0];
+        let batch_year = document.querySelector('#batch_year').value;
         if(company === '' || department === '' || deadline === '' ||  link === '' || skills ===''){
             alert("Input fields can't be empty.");
             return false;
         }else {
-            const res = await axios.post('http://localhost:5000/add/internship',{
-                'title': title,
-                'company':company,
-                'department':department,
-                'description': description,
-                'deadline':deadline,
-                'offcial_link': link,
-                'skill_set':skills,
-                'on_campus': 'No'
-            });
-            
+          let formdata = new FormData();
+          formdata.set('title',title);
+          formdata.set('company',company);
+          formdata.set('description',description);
+          formdata.set('deadline',deadline);
+          formdata.set('official_link',link);
+          formdata.set('skill_set',skills);
+          formdata.set('on_campus','No');
+          formdata.set('company_img',img);
+          formdata.set('department',department);
+          formdata.set('batch_year',batch_year);
+            const res = await axios.post('http://localhost:5000/add/internship',formdata,{
+              headers: {
+                'Content-Type': 'multipart/form-data'
+              }
+          });
+            // console.log(res.data.data);
             if(res.data.status === 'success'){
                 alert("Data submitted successfully")
+                navigate('/internship');
             }else{
                 alert(res.data.msg);
             }   
@@ -97,11 +105,11 @@ function Admin() {
             />
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2">Link</label>
+            <label for="formGroupExampleInput2">Official Link</label>
             <input
               type="text"
               class="form-control"
-              id="link_"
+              id="link"
               placeholder="Link"
               value={link}
               onChange={(e)=>{setLink(e.target.value)}}
@@ -116,6 +124,25 @@ function Admin() {
               placeholder="Skill Set"
               value={skill}
               onChange={(e)=>{setSkill(e.target.value)}}
+            />
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Batch Year</label>
+            <input
+              type="number"
+              class="form-control"
+              id="batch_year"
+              placeholder="Batch Year"
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Company Image</label>
+            <input
+              type="file"
+              class="form-control"
+              id="img"
+        
             />
           </div>
           <div class="form-group">

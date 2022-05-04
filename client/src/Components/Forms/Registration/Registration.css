@@ -5,10 +5,9 @@
   }
   
   .registration {
-    padding: 130px 30px 240px;
-    margin-bottom: -150px;
     background: linear-gradient(-45deg,#40cc6f,15%,rgba(113,114,114,.308),40%,#56b87c,#fff);
     font-size: 30px;
+    padding-top: 60px;
   }
   * {
     margin: 0;

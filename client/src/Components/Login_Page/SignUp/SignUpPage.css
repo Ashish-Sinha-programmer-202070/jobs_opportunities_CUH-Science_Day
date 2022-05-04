@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 70px;
+    padding-top: 150px;
   }
   .signup-page-container .signup-page {
     display: flex;
@@ -93,6 +95,7 @@
     color: #94b6f5;
   }
   .signup-page-container .signup-page .signup-form #welcome-signup {
+    display: none;
     position: absolute;
     color: rgb(255, 249, 249);
     padding: 8px 20px;

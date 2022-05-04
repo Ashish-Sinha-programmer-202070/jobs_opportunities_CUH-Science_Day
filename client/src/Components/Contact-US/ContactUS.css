@@ -1,4 +1,6 @@
-
+.contact-us{
+    padding-top: 60px;
+}
 .img .float_div .info:hover{
 
     color: red;
@@ -67,11 +69,11 @@
     }
     .con_profile{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
+        /* align-items: center;
         height: 140px;
         gap: 80px;
-        padding-top: 60px;
+        padding-top: 60px; */
     }
     .con_img_des{
         position: relative;
@@ -102,6 +104,7 @@
         color:#203239;
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size: 17px;
     }
     .con_img_des .deeg_member{
         font-size: 20px;

@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../Login_Page/Header/Header";
+
 import Footer from "../Login_Page/Footer/Footer";
 import "./About_us.css";
 import Swiper from "./Swiper";
 
 export default function Aboutus() {
   return (
-    <>
-      <Header />
+    <div className="abt-us">
+     
       <div className="images">
         <div className="Floating-caption">
           <p className="float_head"> About CUH  </p>
@@ -31,7 +31,7 @@ export default function Aboutus() {
       </div>
       <Swiper />
       <Footer />
-    </>
+    </div>
 
   );
 }
