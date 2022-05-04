@@ -1,62 +1,70 @@
 .signup-page-container {
     margin: 0px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 70px;
+    padding-top: 150px;
   }
-  .signup-page-container .signup-page {
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
-    border-radius: 30px;
+.signup-page {
     background: linear-gradient(
-      90deg,
-      #f7e5e5,
-      #a7cdf8,
-      48%,
-      #ffffff,
-      48%,
-      #ffffff
-    );
-    /* padding: 2px 20px; */
+    90deg,
+    #6eb6e6,
+    #e8eefe,
+    54%,
+    #13f7b2,
+    54%,
+    #ffffff
+  );
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  padding: 2vh;
+   
   }
-  .signup-page-container .img-box {
-    width: 47%;
+  .cuh_logoSign{
+    width:40%;
+    height:fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
   }
-  .signup-page-container .img-box img {
-    width: 70%;
-    /* border: 2px solid black; */
+  
+  .signup-form {
+  width: 41.5%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
   }
-  .signup-page-container .signup-page .signup-form {
-    /* border: 2px solid black; */
-    width: 50%;
-    padding: 35px 40px;
-    padding-left: 75px;
-    position: relative;
-  }
-  .signup-page-container .signup-page .signup-form h2 {
+  h2{
+    margin-top: 8vh;
     color: rgb(128, 122, 119);
+    text-align: center;
+  
   }
-  .signup-page-container .signup-page .signup-form form {
+  form {
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-  .signup-page-container .signup-page .signup-form .full-name {
+  .full-name {
     width: 100%;
     display: flex;
     gap: 10px;
   }
-  .signup-page-container .signup-page .signup-form .full-name input {
-    font-size: 15px;
-  }
-  .signup-page-container .signup-page .signup-form input {
+  
+ input {
     font-size: 15px;
     border: none;
     outline: none;
@@ -65,11 +73,11 @@
     background: transparent;
     border-bottom: 3px solid rgb(204, 211, 218);
   }
-  .signup-page-container .signup-page .signup-form input:focus {
+  input:focus {
     border-bottom: 4px solid #76b1f5;
   }
-  .signup-page-container .signup-page .signup-form [type="submit"] {
-    width: 25%;
+  .signup-form [type="submit"] {
+    width: 35%;
     border: none;
     font-size: 17px;
     align-self: center;
@@ -80,38 +88,43 @@
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   }
-  .signup-page-container .signup-page .signup-form [type="submit"]:focus {
+  .signup-form [type="submit"]:focus {
     border: none;
   }
-  .signup-page-container .signup-page .signup-form .logo {
+  /* .logo {
     margin: auto;
   }
-  .signup-page-container .signup-page .signup-form .logo p:nth-child(1) {
+  .logo p:nth-child(1) {
     background-color: #88c4fd;
   }
-  .signup-page-container .signup-page .signup-form .logo p:nth-child(2) {
+  .logo p:nth-child(2) {
     color: #94b6f5;
   }
   .signup-page-container .signup-page .signup-form #welcome-signup {
+    display: none;
     position: absolute;
-    color: rgb(255, 249, 249);
-    padding: 8px 20px;
-    border-radius: 0px 24px 24px 0px;
-    top: 20px;
-    left: 50px;
-    font-size: 17px;
-    background: linear-gradient(145deg, #7ab5f8, #93c2f7, #1968fc);
+  top: 1vh;
+  left: 0vw;
+  padding: 9px 13px;
+  background: linear-gradient(
+    130deg,
+    rgb(47, 113, 255),
+    #7d97f4,
+    rgb(78, 122, 255)
+  );
+  color: white;
+  border-radius: 0px 40px 40px 0px;
   }
-  .signup-form .retype-pass {
+  .retype-pass {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 1px 3px; */
-    background: transparent;
+    /* background: transparent; */
     /* border-bottom: 3px solid rgb(204, 211, 218) */
-    position: relative;
-  }
-  .signup-form .retype-pass i {
+    /* position: relative;
+  } */
+   .retype-pass i {
     position: absolute;
     right: 10px;
     cursor: pointer;
@@ -120,7 +133,76 @@
     width: 100%;
     /* border-bottom: none !important; */
   }
-  .signup-page .logo {
+  .logo {
     position: relative;
     left: 80px;
   }
+
+ .gender{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:20px;
+   font-size: 15px;
+ }
+ .gender label{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ 
+@media only screen and (min-width:750px)  {
+  h2{
+    position: relative;
+    left: 10px;
+  }
+  input{
+    margin:2vh,6vw
+  }
+  #password{
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+  }
+  #e_mail{
+    margin-top: 0vh;
+    margin-left: 0vw;
+
+  }
+}
+
+@media only screen and (max-width:750px)  {
+  .signup-page{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+    180deg,
+    #6eb6e6,
+    #e8eefe,
+    100%,
+    #13f7b2,
+    65%,
+    #ffffff
+  );
+  }
+  .signup-form{
+    width: 110%;
+    padding-right: 3vw;
+  }
+  .signup-page-container{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  #welcome-signup{
+    display: none;
+  }
+  .cuh_logoSign{
+    display: flex;
+    justify-content: center;
+    margin-left: 26vw
+  }
+  .gender{
+    padding-right: 26vw;
+  }
+}

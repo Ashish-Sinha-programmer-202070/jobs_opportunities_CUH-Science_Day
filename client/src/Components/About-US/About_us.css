@@ -1,8 +1,9 @@
+.abt-us{
+    padding-top: 60px;
+}
 .images{
     border: 1px solid rgba(0, 0, 0, 0.281);
-    /* background-image: url(https://www.cuh.ac.in//resourcesharingportal/imagec/demo/009.jpg); */
     background-image: url(https://pbs.twimg.com/media/EhdOM0xUcAE28io?format=jpg&name=large);
-    /* height: 100vh; */
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -11,9 +12,8 @@
 .images .Floating-caption{
    
     height: 500px;
-    width: 1440px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.767);
-    /* margin-left: 20px; */
     border-radius: 5px;  
 }
 .images .Floating-caption .float_head{
@@ -56,3 +56,51 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 } */
+@media screen and (max-width:450px){
+    .images{
+        border: 1px solid rgba(0, 0, 0, 0.281);
+        background-image: url(https://pbs.twimg.com/media/EhdOM0xUcAE28io?format=jpg&name=large);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 68vh;
+        width: 100%;
+    }
+    .images .Floating-caption{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.767);
+        border-radius: 5px; 
+        height: auto; 
+    }
+    .images .Floating-caption .float_txt{
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        font-size: 15px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(168, 186, 221);
+        text-shadow: 0px 2px  rgb(43, 40, 40);
+        font-family: 'Roboto Slab', serif;
+        /* padding-left: 5px; */
+        padding-top: 0px;
+    
+    }
+    .images .Floating-caption .float_head{
+        color:rgb(136, 192, 214);
+        margin-top: 0px !important;
+        font-size: 20px;
+        padding-top: 40px; 
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        text-shadow: 1px 3px  rgb(43, 40, 40);
+        padding-left: 15px;
+    } 
+    .new_margin p {
+        padding: 20px 0px;
+        font-style: oblique;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+
+
+}

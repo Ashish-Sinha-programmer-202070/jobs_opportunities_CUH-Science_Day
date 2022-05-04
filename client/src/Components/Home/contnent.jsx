@@ -1,15 +1,20 @@
 import './contnent.css';
 import members from './members';
-import Header from '../Login_Page/Header/Header';
+
 import Footer from '../Login_Page/Footer/Footer';
 import {Fragment, useState} from 'react';
+import { useEffect } from 'react';
 const ImgCircle = (props)=>{
     return(
-        <div className="con_img_des">
-            <div className="con_image">
+        <div className="con_img_dess">
+            <div className="con_images">
                 <img src={props.img} alt="profice picture"/>
             </div>
-            <p className="detail_member">{props.des}</p>
+            <div className="details">
+                <p className="detail_members">{props.des}</p>
+                <p className="qualification" style={{fontSize:"15px"}}>{props.qual}</p>
+
+            </div>
         </div>
     );
 }
@@ -17,32 +22,32 @@ function Content() {
     const [people,changePeople] = useState(members.filter((member,index)=>{return member.role == "teacher"}));
     const [msg,changeMsg] = useState(false);
 
+
   return (
       <>
-      <Header/>
+  
             <div className="body">
-                <div className="image">
-                <div className="Floating-caption">
-                <p className="float_head"> INTERNSHIP CELL </p>
-                <p className="float_txt">CENTRAL UNIVERSITY OF HARYANA</p>
+                <div className="image101">
+                <div className="Floating-captions">
+                <p className="float_heads"> PLACEMENT CELL </p>
+                <p className="float_txts">CENTRAL UNIVERSITY OF HARYANA</p>
                 </div>
                 </div>
-                <div className="con_table">
-                    <div className="con_tab" onClick={()=>{changeMsg(false); changePeople(members.filter((member,index)=>{return member.role == "teacher"}))}}> <h1>Teachers</h1></div>
-                    <div className="con_tab" onClick={()=>{changeMsg(false);changePeople(members.filter((member,index)=>{return member.role == "co-ordinator"}))}} ><h1>Co-ordinator</h1></div>   
-                    <div className="con_tab" onClick={()=>{
+                <div className="con_tables">
+                    <div className="con_tabs" onClick={()=>{changeMsg(false); changePeople(members.filter((member,index)=>{return member.role == "teacher"}))}}> <p>Teachers</p></div>
+                    <div className="con_tabs" onClick={()=>{changeMsg(false);changePeople(members.filter((member,index)=>{return member.role == "co-ordinator"}))}} ><p>Co-ordinator</p></div>   
+                    <div className="con_tabs" onClick={()=>{
                         changePeople([]);
                         changeMsg(msg?false:true)
-                    }} ><h1> Message </h1></div>   
-
+                    }} ><p> Message </p></div>   
                 </div>
-                <div className="con_profile">
+                <div className="con_profiles">
                     {people.map((member,index)=>{
-                        return <ImgCircle img={member.img} des={member.des} key={index}/>  
+                        return <ImgCircle className="image-containers" img={member.img} des={member.des} qual={member.qual} key={index}/>  
                     })}
-                {msg?<p className='teacher_msg'>
-                    <h3 className='teacher_msg_head'>Message from Internship cell</h3>
-                    The Internship Cell at Centyral University of Haryana is a 
+                {msg?<p className='teacher_msgs'>
+                    <h3 className='teacher_msg_heads'>Message from Placement cell</h3>
+                    The Placement Cell at Centyral University of Haryana is a 
                     student led initiative that has been doing commendable work
                         in facilitating the transition from formal education
                         to professional careers for increasing numbers of our 
@@ -56,9 +61,6 @@ function Content() {
                     our campus in 2020-21 despite of the 
                     Covid-19 pandemic.</p>:null}
                 </div>
-
-
-            
             </div>
         <Footer/>    
       </>

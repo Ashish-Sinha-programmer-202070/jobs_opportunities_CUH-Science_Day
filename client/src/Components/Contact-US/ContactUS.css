@@ -1,0 +1,122 @@
+.contact-us{
+    padding-top: 60px;
+}
+.img .float_div .info:hover{
+
+    color: red;
+    background-color: #3a3a3a;
+}
+.img .float_div .info{
+    color: whitesmoke;
+    border: 1px solid #444444;
+    border-radius: 4px          ;
+    width: 100vw;
+    background-color: #444444;
+}
+.img .float_div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    border: #3a3a3a;
+    background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    
+        
+}
+.img .float_div .floatdiv{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 42vh;
+    width: 100vw;
+
+}
+.img{
+    background-color: #3a3a3a;
+}
+.img .float_div .floatdiv .head {
+    margin-left: 30px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img .float_div .floatdiv .info{
+    /* margin-left: 30px; */
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.con_table{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    height: 100px ;
+}
+ .con_table .con_tab{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 50px;
+    width: 200px;
+    font-size: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.con_tab:hover{
+    background-color: gray;
+    }
+    .con_profile{
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center;
+        height: 140px;
+        gap: 80px;
+        padding-top: 60px; */
+    }
+    .con_img_des{
+        /* position: relative;
+        top:40px; */
+        text-align: center;
+    }
+    .con_profile .con_image{
+        display: flex;
+        justify-content: center;
+        border: 3px solid ;
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px ;
+        /* margin-top: 60px; */
+    
+    }
+    .con_image img{
+        border-radius: 50%;
+        object-fit: cover;
+        height: 160px;
+        width: 160px;
+    }
+    .con_profile p{
+        font-size: 30px;
+    }
+    .con_img_des .detail_member{
+        color:#203239;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .con_img_des .deeg_member{
+        font-size: 20px;
+        font-family: 'Khula', sans-serif;
+        margin-top: -5px;
+        margin-bottom: 8px;
+        color: #085E7D;
+    }
+    .con_img_des .deeg_member_num{
+        font-size: 16px;
+        margin-top: -5px;
+        margin-bottom: 8px;
+        font-family: 'Mali', cursive;
+
+    }

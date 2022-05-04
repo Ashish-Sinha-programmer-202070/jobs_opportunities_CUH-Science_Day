@@ -7,19 +7,23 @@ import { FaUserTie,FaUserGraduate } from "react-icons/fa";
 const FrontPage = () => {
     return ( 
         <div className="front-page">
-            <Link to='/home'>
+            
                 <h1>Internship Cell</h1>
-            </Link>
+
             <img src= {cuh_logo} alt="cuh_logo" />
             <p className="clg-name">CENTRAL UNIVERSITY OF HARYANA</p>
             <div className="login-opts">
-                <div className="admin">
+                <div className='login-btn' id="admin">
                     <FaUserTie className='fa-icons'/>
+                    <Link to='/adminlogin'>
                     <p>Admin Login</p>
+                    </Link>
                 </div>
-                <div className="students">
+                <div className='login-btn' id="students">
                     <FaUserGraduate className='fa-icons'/>
+                    <Link to='/login'>
                     <p>Student Login</p>
+                    </Link> 
                 </div>
             </div>
         </div>
