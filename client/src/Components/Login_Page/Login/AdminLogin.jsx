@@ -1,5 +1,4 @@
-// import  React from 'react';
-import React, {useState,useEffect} from "react";
+import React, {useState} from "react";
 import axios from "axios";
 import './LoginPage.css';
 import {Link} from 'react-router-dom';
@@ -10,12 +9,7 @@ import { AuthContext } from "../../../context/AuthContext";
 
 
 
-// useEffect(async() => {
-//     async function postData(){
-//         const res = await axios.post(`http://localhost:5000/auth/login`,{})
-//     }
-// }
-// );
+
 const LoginPage = () =>{
     const navigate = useNavigate();
     const [emailId, setEmailId]  = useState('');
@@ -60,7 +54,7 @@ const LoginPage = () =>{
     return ( 
         <div className="login-page-container">
             <div className="login-page">
-                <img  src={login_img} alt="person unlocking a lock"  />
+                <img  src={login_img} alt="person unlocking a lock" className='cuh_logoLogin' />
                 <div className="login-form">
                     <form onSubmit={(e)=>{e.preventDefault();}} autoComplete="off">
                      <p id="welcome">Welcome Back!</p>
